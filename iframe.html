@@ -5,9 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iframe</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1{
+            text-transform: uppercase;
+        }
+    </style>
 </head>
 <body>
     <!--Trazer conteúdo externo-->
+    <h1>Iframes</h1>
+
+    <h2>YouTube</h2>
+
     <iframe 
     width="560" 
     height="315" 
@@ -16,6 +30,18 @@
     frameborder="0" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
     allowfullscreen>
-    </iframe>   
+    </iframe>
+
+    <h2>Maps</h2>
+
+    <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29333.8058643254!2d-45.9025997365148!3d-23.21666381700985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4a88bd5f8a91%3A0x926413437acf22e2!2sVale%20Sul%20Shopping!5e0!3m2!1spt-PT!2sbr!4v1658356665145!5m2!1spt-PT!2sbr" 
+    width="600" 
+    height="450" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade"
+    ></iframe> 
 </body>
 </html>
