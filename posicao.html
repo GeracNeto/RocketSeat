@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo de Posicionamento</title>
+    <style>
+        div{
+            width: 50px;
+            height: 50px;
+            border: 1px solid;
+            margin-top: 5px;
+        }
+        ol{
+            font-weight: bold;
+        }
+        li{
+            margin-top: 5px;
+        }
+
+        .red{
+            background-color: red;
+        }
+
+        .green{
+            background-color: green;
+        }
+
+        .blue{
+            background-color: blue;
+        }
+
+        /* Position nos elementos */
+
+        .boxr1{
+            position: relative;
+            left: 100px;
+        }
+        .boxr2{
+            position: relative;
+            left: 50px;
+        }
+
+        .boxa1{
+            position: absolute;
+            left: 105px;
+        }
+
+        .boxa2{
+            position: absolute;
+            left: 75px;
+        }
+
+        .boxf1{
+            position: fixed;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Estudo de Posicionamento</h1>
+
+    <h2>Existem 4 tipos de Posicionamento</h2>
+    <ol>
+        <li>static</li>
+        <ul>
+            <li>Os elementos seguem o fluxo normal</li>
+            <li>Um abaixo do outro</li>
+        </ul>
+
+        <div class="boxs1 red"></div>
+        <div class="boxs2 green"></div>
+        <div class="boxs3 blue"></div>
+
+        <li>relative</li>
+        <ul>
+            <li>Possui as propriedades: top, right, bottom, left, z-index</li>
+            <li>Essas podem ser utilizadas para mover o elemento na tela</li>
+            <li>O espaço inicial do obejto se mantém e pode ser reutlizado para outro coisa</li>
+        </ul>
+
+        <div class="boxr1 red"></div>
+        <div class="boxr2 green"></div>
+        <div class="boxr3 blue"></div>
+
+        <li>absolute</li>
+        <ul>
+            <li>Também possui as 4 propriedades: top, right, bottom, left, z-index</li>
+            <li>O espaço inicial do objeto é automaticamente preenchido</li>
+            <li>Dessa forma é possível sobrepor elementos</li>
+            <li>O absolute sempre fica referente em relação a página e não ao objeto em que está inserido, a não ser que, o elemento pai tenha um position relative</li>
+        </ul>
+
+        <div class="boxa1 red"></div>
+        <div class="boxa2 green"></div>
+        <div class="boxa3 blue"></div>
+
+        <li>fixed</li>
+        <ul>
+            <li>Também possui as 4 propriedades: top, right, bottom, left, z-index</li>
+            <li>O elemento fica fixo na página. Dessa forma, se move com o scroll do mouse</li>
+        </ul>
+
+        <div class="boxf1 red"></div>
+        <div class="boxf2 green"></div>
+        <div class="boxf3 blue"></div>
+    </ol>
+    
+    
+</body>
+</html>
