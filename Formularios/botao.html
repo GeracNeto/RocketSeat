@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Botões</title>
+</head>
+<body>
+    <h1>Atributos comuns dos botões</h1>
+    <ul>
+        <li>
+            type
+            <ul>
+                <li>submit</li>
+                <li>reset</li>
+                <li>button</li>
+            </ul>
+        </li>
+        <li>autofocus</li>
+        <li>disable</li>
+        <li>name</li>
+        <li>value</li>
+        <li>form</li>
+    </ul>
+
+    <h2>Exemplos:</h2>
+
+    <ol>
+        <li>
+            <h3>reset button e input text com value = "valor inicial"</h3>
+            <p>Toda vez que clicar ele reseta para o valor inicial</p>
+        
+            <form action="">
+                <input type="text" value="valor inicial">
+                <button type="reset">RESET</button>
+            </form>
+        </li>
+
+        <li>
+            <h3>autofocus</h3>
+            <p>Caso apertemos "Enter" ele direciona para o botão, por exmeplo</p>
+        
+            <form action="">
+                <input type="text">
+                <button autofocus>CLICK ME</button>                
+            </form>
+        </li>
+
+        <li>
+            <h3>button com name e value</h3>
+            <p>Quando clicamos ele enviará o valor com o respectivo nome, como se fosse por exemplo:
+                <br>
+                button name="button" value="valor" = button: valor
+            </p>
+        </li>
+
+        <li>
+            <h3>O form como propriedade do botão</h3>
+            <p>Serve para linkar o botão ao formulário, quando o botão não está dentro do formulário. Veja o exemplo no html abaixo:
+                <br>
+                <a href="formulario2.html">Formulário Linkado</a>
+            </p>
+        </li>
+    </ol>
+</body>
+</html>
