@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Label</title>
+</head>
+<body>
+    <h1>Uso de Labels em form</h1>
+
+    <form action="">
+        <fieldset>
+            <legend>Maneira 1 - Sem o uso do for</legend>
+            <label>
+                Nome:
+                <input type="text" name="" id="">
+            </label>    
+        </fieldset>
+    </form>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <form action="">
+        <fieldset>
+            <legend>Maneira 2 - Com o uso do for</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" name="" id="nome">
+        </fieldset>
+    </form>
+
+    <p>
+        Em ambas as formas ao clicarmos na label, que no caso é "Nome" o cursor já é direcionado para o input
+        <br>labels que funcionam:
+        <ul>
+            <li>button</li>
+            <li>input (not hidden)</li>
+            <li>meter</li>
+            <li>output</li>
+            <li>progress</li>
+            <li>select</li>
+            <li>textarea</li>
+        </ul>
+
+        Assim, podemos associar uma ou mais tags de entrada. Caso utilizemos o for para conectar.
+    </p>
+
+    
+</body>
+</html>
