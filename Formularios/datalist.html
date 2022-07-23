@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datalist</title>
+</head>
+<body>
+    <h1>Datalist</h1>
+    <ul>
+        <li>Lista de valores como sugestão a uma tag input</li>
+        <li>Valores sugestivos e não obrigatórios</li>
+        <li>Usuários poderão selecionar um dos valores, ou colocar um valor diferente da sugestão</li>
+        <li>list é um atributo que recebe o id da datalist</li>
+        <li>Tipos de inputs suportados: <br>
+            <ul>
+                <li>text</li>
+                <li>search</li>
+                <li>url</li>
+                <li>tel</li>
+                <li>email</li>
+                <li>date</li>
+                <li>month</li>
+                <li>week</li>
+                <li>time</li>
+                <li>datetime-local</li>
+                <li>number</li>
+                <li>range</li>
+                <li>color</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>Exemplos:</h2>
+
+    <input type="text" list="browsers" placeholder="Choose a browser">
+    <datalist id="browsers">
+      <option value="Chrome">
+      <option value="Firefox">
+      <option value="Internet Explorer">
+      <option value="Opera">
+      <option value="Safari">
+    </datalist>
+    
+    <input type="color" list="colors">
+    <datalist id="colors">
+        <option value="#F41CF8"/>
+        <option value="#3CA320"/>
+        <option value="#E39FA8"/>
+    </datalist>
+</body>
+</html>
