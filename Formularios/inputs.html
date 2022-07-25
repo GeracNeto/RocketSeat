@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags de Entrada de Dados</title>
+</head>
+<body>
+    <h1>Tag de Entrada de Dados - input</h1>
+    <h2>Características</h2>
+    <ul>
+        <li>Um dos mais usados em formulários</li>
+        <li>Aceita os mais diversos tipos de dados</li>
+        <li>Um dos mais poderosos e complexos</li>
+        <li>Elevado número de combinações</li>
+        <li>Atributos mais utilizados:
+            <ul>
+                <li>type</li>
+                <li>name</li>
+                <li>id</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>Atributos</h2>
+    <ul>
+        <li>
+            autocomplete
+            <input type="text" autocomplete="name">
+        </li>
+
+        <br>
+        <li>
+
+            autofocus
+            <input type="text" autofocus>
+            <ul>
+                <li>Apenas um por página</li>
+            </ul>
+        </li>
+
+        <br>
+
+        <li>
+            disable
+            <input type="text" disabled>
+        </li>
+
+        <br>
+
+        <li>
+            value
+            <input type="text" value="input here">
+        </li>
+
+        <br>
+
+        <li>
+            readonly
+            <input type="text" value="teste readonly" readonly>
+            <ul>
+                <li>Igual o disabled porém não fica com cor opaca</li>
+            </ul>
+        </li>
+
+        <br>
+
+        <li>form e name: serve para linkar o input para um formulário</li>
+
+        <br>
+
+        <li>
+            require
+            <input type="text" required>
+            <ul>
+                <li>Faz com que o preenchimento seja obrigatório</li>
+            </ul>
+        </li>
+
+        <br>
+        
+        <li>
+            placeholder
+            <input type="text" placeholder="type here">
+        </li>
+    </ul>
+
+    <h2>Tipos de inputs</h2>
+
+    <ul>
+        <li>
+            password
+            <input type="password" minlength="4" size="8">
+        </li>
+        <ul>
+            <li>
+                Exemplo de atributos:
+                <ul>
+                    <li>minlenght / max lenght: mínimo e máximo de caracteres permitido pelo input</li>
+                    <li>size: tamanho do campo input</li>
+                    <li>pattern: expressão para validar os caracteres. Exemplo quando exige letra maiúscula etc...</li>
+                    <li>inputmode: determina o tipo de entrada, se é só numérico, texto etc...</li>
+                </ul>
+            </li>
+        </ul>
+
+        <br>
+
+        <li>
+            email
+            <input type="email">
+        </li>
+        <ul>
+            <li>
+                Exemplo de atributos:
+                <ul>
+                    <li>multiple: permite colocar um ou mais emails por ","</li>
+                    <li>pattern</li>
+                    <li>list: linkado à uma datalist com id de mesmo nome para sugerir lista de emais emails</li>
+                </ul>
+            </li>
+        </ul>
+
+        <br>
+
+        <li>
+            url
+            <input type="url" placeholder="Exemplo: http://example.com" pattern="*\.com\.br/.*" spellcheck="true">
+        </li>
+        <ul>
+            <li>
+                Exemplo de atributos:
+                <ul>
+                    <li>placeholder</li>
+                    <li>pattern: *\.com\.br/.* -> para ser obrigatório utilizar o .com.br</li>
+                    <li>title: Caso no envio de erro ele mostra o title</li>
+                    <li>list</li>
+                    <li>spellcheck: habilita correção ortográfica para este input</li>
+                </ul>
+            </li>
+        </ul>
+
+        <br>
+
+        <li>
+            File
+            <input type="file" accept=".pdf">
+        </li>
+        <ul>
+            <li>
+                Exemplo de atributos:
+                <ul>
+                    <li>value: contém o arquivo a ser enviado</li>
+                    <li>files: lista de um arquivo ou arquivos</li>
+                    <li>accept: descreve que tipos de arquvios serão aceitos: .doc, .docx, .pdf, .audio/* (/* para mostrar que aceita todos os tipos de audio), etc...</li>
+                    <li>multiple: permite o envio de múltiplos arquvios</li>
+                    <li>Para formulários do tipo "file":</li>
+                    <ul>
+                        <li>method="post"</li>
+                        <li>enctype="multipart/form-data"</li>
+                    </ul>
+                </ul>
+            </li>
+        </ul>
+
+        <br>
+
+        <li>
+            color
+            <input type="color"">
+        </li>
+        <ul>
+            <li>
+                Exemplo de atributos:
+                <ul>
+                    <li>value: para definir cor inicial</li>
+                    <li>list: para pré determinar lista de cores (linkar com datalista) exemplo: <a href="datalist.html"> datalist </a></li>
+                </ul>
+            </li>
+        </ul>
+        <br>
+
+        <li>
+            checkbox
+            <input type="checkbox"">
+        </li>
+        <ul>
+            <li>
+                Exemplo de atributos:
+                <ul>
+                    
+                </ul>
+            </li>
+        </ul>
+
+    </ul>
+
+    
+</body>
+</html>
