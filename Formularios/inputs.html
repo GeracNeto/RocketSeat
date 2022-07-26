@@ -179,6 +179,7 @@
                 </ul>
             </li>
         </ul>
+
         <br>
 
         <li>
@@ -189,13 +190,167 @@
             <li>
                 Exemplo de atributos:
                 <ul>
-                    
+                    <li>value: valor que aquele campo contém, senão tiver prsente o padrão é on</li>
+                    <li>checked: para deixar o campo marcado por padrão</li>
+                    <li>
+                        Múltiplos valores:
+                        <fieldset style="max-width: 20%;">
+                            <legend>Choose your interests</legend>
+                            <div>
+                                <input type="checkbox" name="interest" value="coding" checked>
+                                <label for="coding">coding</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="interest" value="music">
+                                <label for="music">music</label>
+                            </div>
+                        </fieldset>
+                    </li>
                 </ul>
             </li>
         </ul>
 
-    </ul>
+        <br>
 
-    
+        <li>
+            radio
+            <input type="radio"">
+        </li>
+        <ul>
+            <li>
+                Exemplo de atributos:
+                <ul>
+                    <li>checked</li>
+                    <li>value: valor que aquele campo contém</li>
+                    <li>Exemplo:
+                        <fieldset style="max-width: 15%;">
+                            <legend>Bora tomar um café?</legend>
+
+                            <label for="yes">YES</label>
+                            <input type="radio" id="yes" name="cafe" value="yes">
+
+                            <label for="no">NO</label>
+                            <input type="radio" name="cafe" id="no" value="no" checked>
+                        </fieldset>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <br>
+
+        <li>
+            textarea
+            <textarea name="textarea" id="" cols="30" rows="10"></textarea>
+        </li>
+        <ul>
+            <li>Exemplo de atributos</li>
+            <ul>
+                <li>wrap: indica se o texto passará ou não os limites da caixa</li>
+            </ul>
+        </ul>
+
+        <br>
+
+        <li>
+            select
+            <label for="carselect">Qual modelo do carro</label>
+            <select name="carmodel" id="carselect">
+                <option value="">Selecione o modelo</option>
+                <option value="fiat">fiat</option>
+                <option value="audi">audi</option>
+                <option value="ford">ford</option>
+            </select>            
+        </li>
+        <ul>
+            <li>Exemplo de atributos</li>
+            <ul>
+                <li>value</li>
+                <li>multiple: permite selecionar mais de uma opção</li>
+            </ul>
+        </ul>
+
+        br
+
+        <li>
+            optgroup
+            <label>
+                <select name="pets" multiple>
+                    <optgroup label="4-legged pets">
+                        <option value="dog">dog</option>
+                        <option value="cat">cat</option>
+                    </optgroup>
+                    <optgroup label="Flying pets">
+                        <option value="parrot">Parrot</option>
+                        <option value="macaw">Macaw</option>
+                        <option value="albatross">Albatross</option>
+                    </optgroup>
+                </select>
+            </label>
+        </li>
+
+        <br>
+        
+        <li>
+            search
+            <datalist id="searchterms">
+                <option value="Mac">Mac</option>
+                <option value="Win">Win</option>
+                <option value="Linux">Linux</option>
+            </datalist>
+            <input type="search" name="q" list="searchterms" aria-label="Campo de pesquisa">
+        </li>
+        <ul>
+            <li>Exemplo de atributos;:</li>
+            <ul>
+                <li>list - datalist</li>
+                <li>pattern</li>
+                <li>aria-label: leitor de tela</li>
+            </ul>
+        </ul>
+
+        <br>
+
+        <li>
+            number
+            <input type="number" min="0" max="25" step="5">
+            <ul>
+                <li>Exemplo de atributos</li>
+                <ul>
+                    <li>min e max: mínimo e máximo do valor númerico</li>
+                    <li>step: step entre os números</li>
+                </ul>
+            </ul>
+        </li>
+
+        <br>
+
+        <li>
+            date
+            <input type="date">
+        </li>
+
+        <br>
+
+        <li>
+            month
+            <input type="month">
+        </li>
+
+        <br>
+
+        <li>
+            week
+            <input type="week">
+        </li>
+
+        <br>
+
+        <li>
+            time
+            <input type="time">
+        </li>
+
+    </ul>
 </body>
 </html>
