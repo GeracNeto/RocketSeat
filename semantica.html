@@ -1,0 +1,132 @@
+<!--
+        Seções comuns em documentos HTML
+
+        - Cabeçalho <header>
+        - Navegação <nav>
+        - Conteúdo principal <main>
+        - Barra lateral <aside>
+        - Rodapé <footer>            
+-->
+
+<!--
+    <header>
+    
+    - Onde utilizar?
+        - Quando no início da página, é visto como global
+        - Pode ser usado em outros elementos semânticos como: article, section
+        - header dentro de header ou footer? NÃO
+    - Múltiplos headers
+    - Não possui atributos específicos, somente globais
+-->
+
+<!--
+    <nav>
+
+    - Onde e por que utilizar?
+        - Geralmente dentro do header
+        - O nav geralmente é a navegação principal do site, as demais secundárias não precisam ser nav
+        - Navgeações "especiais"
+    - Não possuem atributos específico, somente globais
+-->
+
+<!--
+    <main>
+
+    - Onde e por que utilizar?
+        - Diretamente no body
+        - O main abrange o article, por exemplo
+    - Não possuem atributos específico, somente globais
+-->
+
+<!--
+    <article>
+
+    - Onde e por que utilizar?
+        - Dentro do <main>
+    - Não possuem atributos específico, somente globais
+-->
+
+<!--
+    <aside>
+
+    - Conteúdo levemente relacionados ao conteúdo principal
+        - explicações
+        - glossários
+        - links extras
+        - biografia do autor
+        - informações de perfil
+-->
+
+<!--
+    <footer>
+
+    - Geralmente no final da página
+        - informações do autor, copyright, contato, sitemap, voltar ao topo
+    - Não possuem atributos específico, somente globais
+-->
+
+<!--
+    <section>
+
+    -  Geralmente é feito dessa forma:
+        - título
+        - texto
+
+        <section>
+            <h2>Contato</h2>
+            <p>Fale conosco</p>
+        </section>
+    
+    - Não possuem atributos específico, somente globais
+-->
+
+<!--
+    Elementos não semânticos, para uso genérico
+
+    <div>
+
+        - Usado se não conseguir achar um elemento de bloco semântico
+
+    <span>
+
+        - Usado se não conseguir achar um elemento de texto semântico
+    
+    Em ambas, use atributos globais como id e class para entregar maior significado
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Semantic</title>
+</head>
+
+<body>
+    <header>
+        Logomarca
+
+        <nav>
+            <ul>
+                <li>item</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        Conteúdo principal
+    </main>
+
+    <aside>
+        Parte lateral
+    </aside>
+
+    <footer>
+        Rodapé
+    </footer>
+</body>
+
+</html>
