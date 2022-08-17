@@ -1,0 +1,62 @@
+/* First-Child */
+/* Seleciona o primeiro filho de um grupo de elementos */
+ul li:first-child {
+    font-weight: bolder;
+    color: #f00;
+}
+
+/* nth-of-type */
+/* Pega o elemento por tipo e posição */
+article p:nth-of-type(1) {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+article p:nth-of-type(3) {
+    color: #00f;
+}
+
+/* nth-child */
+/* É quando queremos selecionar o primeiro filho de um grupo de elementos. */
+.article-two p:nth-child(2) {
+    color: darkmagenta;
+}
+
+/* nth-child odd e even */
+.odd-even {
+    width: fit-content;
+}
+
+.odd-even li:nth-child(odd) {
+    color: #f00;
+    background-color: #0f0;
+}
+
+.odd-even li:nth-child(even) {
+    color: #0f0;
+    background-color: #f00;
+}
+
+/* Hover e focus */
+a:hover {
+    color: #f00;
+}
+
+input:focus {
+    background-color: #f00;
+    border-color: #00f;
+    outline: none; /* Não é recomendado retirar pois  é de acessibilidade do usuário */
+}
+
+ /* disabled e enabled */
+input:disabled{
+    background-color: #f00;
+}
+
+input:enabled{
+    background-color: #0f0;
+}
+
+input:required{
+    background-color: #00f;
+}
