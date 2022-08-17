@@ -1,0 +1,22 @@
+li::before{
+    content: ">";
+}
+
+li{
+    position: relative;
+}
+
+li::after{
+    content: "";
+
+    width: 20px;
+    height: 1px;
+    background-color: #00f;
+
+    position: absolute;
+    bottom: 0;
+}
+
+p::first-line{
+    font-weight: bold;
+}
