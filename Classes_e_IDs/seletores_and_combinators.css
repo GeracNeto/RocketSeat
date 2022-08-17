@@ -1,0 +1,37 @@
+/* Seletores */
+[title] {
+    color: #00f;
+}
+
+h1:hover,
+h3:hover {
+    color: #000;
+}
+
+/* Combinators */
+article h2{
+    color: #f00;
+}
+
+/* Child Combinator */
+/* Primeiro filho direto de div depois de ul */
+div > ul > li{
+    color: rgb(36, 201, 146);
+}
+
+/* Sibling Combinator */
+/* Pega o primeiro irmão direto */
+#sibling + p{
+    border: 1px solid;
+}
+
+button + button{
+    margin-left: 30px;
+}
+
+/* General Sibling Combinator */
+/* Seleciona todos os elementos irmãos */
+#general-sibling ~ p{
+    background-color: chocolate;
+    width: fit-content;
+}
