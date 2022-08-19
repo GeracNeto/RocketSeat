@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+
+    display: flex;
+
+}
+
+footer {
+    background-color: rgba(204, 196, 196, 0.651);
+
+    height: 8rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+
+    font-weight: bolder;
+
+    margin-top: auto;
+}
