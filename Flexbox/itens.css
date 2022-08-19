@@ -1,0 +1,45 @@
+.box {
+    display: flex;
+
+    border: 1px dashed #f00;
+
+    margin-bottom: 30px;
+}
+
+.box div {
+    border: 1px solid;
+
+    flex-basis: 100px;
+    /* Largura e altura dos itens: largura se o direction for row e altura se o for column */
+}
+
+.box div:nth-child(2),
+.box div:nth-child(3) {
+    flex-grow: 1;
+}
+
+.box-two {
+    display: flex;
+
+    border: 1px dashed #f00;
+
+    width: 300px;
+}
+
+.box-two div {
+    border: 1px solid;
+    flex-basis: 100%;
+}
+
+.box-two div:nth-child(1),
+.box-two div:nth-child(3) {
+    flex-shrink: 2;
+}
+
+.box-two div:nth-child(1) {
+    order: 4;
+}
+
+.box-two div:nth-child(3) {
+    order: 3;
+}
